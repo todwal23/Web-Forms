@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="styles.css">
+        <title>HTML Forms</title>
+    </head>
+    <body>
+        <form action="/" method="GET">
+            <label for="username">Your Name</label>
+            <input
+                type="text"
+                name="user-name"
+                id="username"
+                placeholder="User Name"
+            >
+            <label for="email">Your email address</label>
+            <input
+                type="email"
+                name="user-name"
+                id="email"
+                placeholder="email"
+            >
+            <label for="userage">Your age</label>
+            <input
+                type="number"
+                step="1"
+                id="userage"
+                name="user-age"
+                placeholder="age"
+            >
+            <label for="userpassword">Your password</label>
+            <input
+                type="password"
+                name="user-password"
+                id="userpassword"
+                placeholder="password"
+            >
+            <label for="birthdate">Birthdate</label>
+            <input
+                type="date"
+                name="user-birthdate"
+                id="birthdate"
+            >
+            <button>Submit</button>
+        </form>
+    </body>
+</html>
