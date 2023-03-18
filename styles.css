@@ -11,16 +11,23 @@ form {
     border-radius: 6px;
 }
 
-input {
+input,
+textarea {
     width: 100%;
     display: block;
     margin-bottom: 1rem;
     border-radius: 5px;
     box-sizing: border-box;
+    border: 1px solid rgb(184, 184, 184);
+    padding: 0.25rem;
+    color: rgb(61, 58, 58);
 }
 
-input:hover {
-    background-color: rgb(245, 222, 236);
+input:focus,
+textarea:focus {
+    background-color: rgb(219, 190, 253);
+    color: rgb(32, 5, 63);
+    border-color: rgb(32, 5, 63));
 }
 
 button {
@@ -31,4 +38,13 @@ button {
 button:hover {
     background-color: black;
     color: #fff;
+}
+
+.form-control-inline {
+    display: flex;
+}
+
+.form-control-inline input {
+    width: auto;
+    margin-right: 0.5rem;
 }

@@ -16,6 +16,13 @@
                 id="username"
                 placeholder="User Name"
             >
+            <label id="user-message">Your message</label>
+            <textarea
+                name="user-message"
+                id="user-message"
+                cols="30"
+                rows="5"
+            ></textarea>
             <label for="email">Your email address</label>
             <input
                 type="email"
@@ -39,11 +46,59 @@
                 placeholder="password"
             >
             <label for="birthdate">Birthdate</label>
-            <input
-                type="date"
-                name="user-birthdate"
-                id="birthdate"
-            >
+            <input type="date" name="user-birthdate" id="birthdate">
+            <hr>
+            <h2>How should we verify your account?</h2>
+            <div class="form-control-inline">
+                <input
+                    type="radio"
+                    name="verify"
+                    id="verify-text"
+                    value="text-message"
+                >
+                <label for="verify-text">Via text message (SMS)</label>
+            </div>
+            <div class="form-control-inline">
+                <input
+                    type="radio"
+                    name="verify"
+                    id="verify-phone"
+                    value="phone"
+                >
+                <label for="verify-phone">Via phone call</label>
+            </div>
+            <div class="form-control-inline">
+                <input
+                    type="radio"
+                    name="verify"
+                    id="verify-email"
+                    value="email"
+                >
+                <label for="verify-email">via email</label>
+                <hr>
+            </div>
+            <div class="form-control-inline">
+                <input type="checkbox" id="agree-terms" name="terms">
+                <label for="agree-terms">Agree to terms?</label>
+            </div>
+            <div class="form-control-inline">
+                <input
+                    type="checkbox"
+                    id="contact-email"
+                    name="contact"
+                    value="email"
+                >
+                <label for="contact-email">Contact me by email</label>
+            </div>
+            <div class="form-control-inline">
+                <input
+                    type="checkbox"
+                    id="contact-phone"
+                    name="contact"
+                    value="phone"
+                >
+                <label for="contact-phone">Contact me by phone</label>
+            </div>
             <button>Submit</button>
         </form>
     </body>
