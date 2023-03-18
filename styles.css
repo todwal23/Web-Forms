@@ -12,7 +12,8 @@ form {
 }
 
 input,
-textarea {
+textarea,
+select {
     width: 100%;
     display: block;
     margin-bottom: 1rem;
@@ -27,7 +28,7 @@ input:focus,
 textarea:focus {
     background-color: rgb(219, 190, 253);
     color: rgb(32, 5, 63);
-    border-color: rgb(32, 5, 63));
+    border-color: rgb(32, 5, 63);
 }
 
 button {
@@ -47,4 +48,8 @@ button:hover {
 .form-control-inline input {
     width: auto;
     margin-right: 0.5rem;
+}
+
+textarea {
+    resize: none;
 }
